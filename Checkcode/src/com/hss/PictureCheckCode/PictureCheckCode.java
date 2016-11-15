@@ -255,13 +255,12 @@ public class PictureCheckCode extends HttpServlet {
 			float scaleSize = random.nextFloat() + 0.8f;
 
 			if (scaleSize > 1f)
+				
 				scaleSize = 1f;
 
 			trans.scale(scaleSize, scaleSize);
 
 			g2d_word.setTransform(trans);
-
-			/** ********************* */
 
 			g.drawString(ctmp, 15 * i + 18, 14);
 
